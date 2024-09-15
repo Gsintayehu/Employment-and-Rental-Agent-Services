@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment and Rental Agent</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://insideethiopiatours.com/wp-content/uploads/2020/06/Ethiopian-tour-agencies-searching-for-one-1499x1000-1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Header and navigation styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Section styling */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #444;
+            text-shadow: 2px 2px 4px #aaa;
+        }
+
+        .employee, .rental, .form-section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button styling */
+        button, input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button:hover, input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, textarea {
+            margin: 5px 0;
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        input, textarea {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Employment and Rental Agent Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#employees">Find Employees</a></li>
+                <li><a href="#rentals">Find Rentals</a></li>
+                <li><a href="#employer-form">Employer Form</a></li>
+                <li><a href="#employee-form">Employee Form</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Employees Section -->
+    <section id="employees">
+        <h2>Available Employees</h2>
+        <div class="employee">
+            <h3>Waiter</h3>
+            <p>Monthly Salary: 3000 ETB</p>
+            <button class="hire-btn">Hire</button>
+        </div>
+        <div class="employee">
+            <h3>Housekeeper</h3>
+            <p>Monthly Salary: 2500 ETB</p>
+            <button class="hire-btn">Hire</button>
+        </div>
+    </section>
+
+    <!-- Rentals Section -->
+    <section id="rentals">
+        <h2>House Rentals</h2>
+        <div class="rental">
+            <h3>House A</h3>
+            <p>Rent: 5000 ETB</p>
+            <p>Commission: 10% (500 ETB)</p>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+        <div class="rental">
+            <h3>House B</h3>
+            <p>Rent: 6000 ETB</p>
+            <p>Commission: 10% (600 ETB)</p>
+            <button class="rent-btn">Rent Now</button>
+        </div>
+    </section>
+
+    <!-- Employer Form Section -->
+    <section id="employer-form" class="form-section">
+        <h2>Employer Information Form</h2>
+        <form>
+            <label for="employer-name">Name:</label>
+            <input type="text" id="employer-name" name="employer-name" required>
+
+            <label for="employer-email">Email:</label>
+            <input type="email" id="employer-email" name="employer-email" required>
+
+            <label for="employer-phone">Phone Number:</label>
+            <input type="tel" id="employer-phone" name="employer-phone" required>
+
+            <label for="employer-address">Address:</label>
+            <textarea id="employer-address" name="employer-address" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Employee Form Section -->
+    <section id="employee-form" class="form-section">
+        <h2>Employee Information Form</h2>
+        <form>
+            <label for="employee-name">Name:</label>
+            <input type="text" id="employee-name" name="employee-name" required>
+
+            <label for="employee-email">Email:</label>
+            <input type="email" id="employee-email" name="employee-email" required>
+
+            <label for="employee-phone">Phone Number:</label>
+            <input type="tel" id="employee-phone" name="employee-phone" required>
+
+            <label for="employee-job">Job Position (Waiter, Housekeeper, etc.):</label>
+            <input type="text" id="employee-job" name="employee-job" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: getachewsintayehu40@gmail.com</p>
+        <p>Phone: 903039530</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hireButtons = document.querySelectorAll('.hire-btn');
+            const rentButtons = document.querySelectorAll('.rent-btn');
+
+            hireButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Employee hired!');
+                });
+            });
+
+            rentButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('House rented!');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
